@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>The largest number is:</h3>
+    <p id ="sum">The result:</p>
+    
+    <script>
+        let userInput1=Number(prompt('Enter first number: '))
+        let userInput2=Number(prompt('Enter second number: '))
+        let userInput3=Number(prompt('Enter third number: '))
+        
+        function maxOfThree(x, y, z){
+        if (x>y && x>z){
+            return x
+        }
+        else if (y>x && y>z){
+            return y
+        }
+        else
+            return z
+        }
+        let result=maxOfThree(userInput1, userInput2, userInput3)
+        document.getElementById("sum").innerHTML=result
+        
+    </script>
+
+</body>
+</html>
